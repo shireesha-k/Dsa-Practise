@@ -15,3 +15,30 @@ public class practise1 {
         }
     }
 }
+
+
+// User function Template for Java
+
+class Solution {
+    int size(int arr[]){
+        int cnt = 0;
+        int i = 0;
+        while(arr[i]!= '\0'){
+            cnt++;
+            i++;
+        }
+        return cnt;
+    }
+    void pushZerosToEnd(int[] arr) {
+        // code here
+        int i = 0;
+        int n = size(arr);
+        for(int j = 0;j<n;j++){
+            if(arr[j] != 0){
+                swap(arr[i],arr[j]);
+                i++;
+                
+            }
+        }
+    }
+};
